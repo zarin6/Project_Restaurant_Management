@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="log-in text-center">
+        <h2 class="main-logo window">Logowanie :</h2>
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <span><ul>
+                    {{form.as_table}}
+                  <p>
+
+                    </p>
+                 </ul>
+                </span>
+            <input class="btn btn-danger" type="submit" value="Zaloguj">
+        </form>
+    </div>
+ {% endblock %}

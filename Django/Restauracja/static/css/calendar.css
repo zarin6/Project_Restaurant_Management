@@ -1,0 +1,57 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background: repeat url("/static/images/image.png");
+}
+tbody {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: rgba(242, 199, 111, 0.9);
+}
+
+.day-choose {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.calendar {
+  width: 70%;
+  margin: auto;
+  font-size: 13px;
+}
+
+.calendar tr, .calendar td {
+  border: 1px solid black;
+}
+
+.calendar th {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calendar td {
+  width: 140px;
+  height: 75px;
+  padding: 20px 0px 0px 5px;
+}
+
+.month {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+ul {
+  height: 100%;
+  padding: 0px 5px 0px 20px;
+}
+
+a {
+  color: #17a2b8;
+}
+
+

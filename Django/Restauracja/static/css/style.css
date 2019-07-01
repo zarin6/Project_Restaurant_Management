@@ -1,0 +1,215 @@
+/*------------------------------*/
+/*---- Main style ----*/
+/*------------------------------*/
+:root {
+  --link-color: #ffffff;
+  --light-link-color: #000000;
+  --background-color: rgba(153, 76, 42, 0.92);
+  --lighter-background-color: rgba(242, 199, 111, 0.6);
+  --dark-text: #000000;
+  font-size: 16px;
+}
+
+form span input {
+  opacity: 0.5;
+}
+
+
+.text-mini-logo{
+   font-family: "Charmonman", cursive;
+  /*display: inline-block;*/
+  color: var(--light-link-color)!important;
+  /*margin-top: 1px;*/
+  font-size: 0.7rem;
+  width: auto;
+  height: 30px;
+}
+
+#menu_button img:hover {
+  opacity: 0.8;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background: repeat url("/static/images/image.png");
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.text-color-darker {
+  color: var(--background-color);
+}
+
+/*------------------------------*/
+/*---- Main nav section ----*/
+/*------------------------------*/
+
+.circle-div {
+  border: 3px solid var(--link-color);
+  border-radius: 50%;
+  height: 39px;
+  width: 45px;
+  padding-top: 1px;
+}
+
+.icon-user {
+  font-size: 2rem;
+  color: var(--link-color);
+}
+
+.nav-link {
+  color: var(--light-link-color)!important;
+  font-size: 1.2rem;
+}
+
+.navbar {
+background-color:var(--background-color);
+}
+
+.page-header .nav .nav-item .active,
+.page-header .nav .nav-item a:hover{
+    color: var(--link-color)!important;
+}
+
+.main-logo {
+  font-family: "Charmonman", cursive;
+  display: inline-block;
+  color: var(--light-link-color)!important;
+  margin-top: 10px;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.main-logo-smaller {
+  font-size: 2rem;
+}
+
+.main-logo span {
+  color: var(--link-color);
+}
+
+/*------------------------------*/
+/*---- Log-in ----*/
+/*------------------------------*/
+
+form label {
+  min-width: 100px;
+}
+
+label {
+display: inline-block;
+margin-bottom: 1.5rem;
+}
+
+.log-in{
+  width: 30%;
+  padding: 1%;
+  height: 100%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  background-color:var(--background-color);
+}
+
+.login {
+  font-family: "Charmonman", cursive;
+  display: inline-block;
+  color: var(--light-link-color)!important;
+  margin-top: 10px;
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+/*------------------------------*/
+/*---- Slider section----*/
+/*------------------------------*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  opacity: 1 !important;
+  outline: black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: var(--dark-text);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: var(--dark-text);
+}
+
+.carousel-caption {
+  position: relative !important;
+  left: 0 !important;
+  right: 0 !important;
+  font-weight: 600;
+  color: var(--dark-text) !important;
+}
+
+
+/*------------------------------*/
+/*---- Dashboard ----*/
+/*------------------------------*/
+
+.dashboard-nowrap {
+  flex-wrap: nowrap;
+  margin: 0;
+  position: absolute;
+}
+.long-bg {
+  background: var(--lighter-background-color);
+  display: inline-block;
+  vertical-align: top;
+  min-height: 100%;
+}
+.dashboard-section .nav-item {
+  display: block;
+  width: 260px;
+  margin-bottom: 20px;
+}
+.dashboard-section .nav-item i.fa-angle-right {
+  display: none;
+}
+.dashboard-section .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-section .nav-item a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Charmonman", cursive;
+  border-left: 5px solid transparent;
+}
+.dashboard-section .nav-item a.active,
+.dashboard-section .nav-item a:hover {
+  border-left: 5px solid var(--link-color);
+}
+.dashboard-section .nav-item a.active i.fa-angle-right,
+.dashboard-section .nav-item:hover i.fa-angle-right {
+  display: block;
+  color: var(--link-color)!important;
+}
+
+
+
