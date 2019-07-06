@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="log-in text-center">
+        <h2 class="main-logo window">Rezerwacje Do Akceptacji :</h2>
+        <form action="{% url 'acception' %}" method="POST">
+            {% csrf_token %}
+            <span>
+                <ul>Data: {{to_accept.date_reservation }}</ul>
+                <ul> Ilość osób: {{to_accept.table_size }}</ul>
+                <ul>Godzina: {{to_accept.time_reservation }}</ul>
+            </span>
+            <input class="btn btn-danger" type="submit" value="Odrzuć" name="btn">
+            <input class="btn btn-success" type="submit" value="Akceptuj" name="btn">
+        </form>
+    </div>
+ {% endblock %}

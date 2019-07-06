@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <div>
-        <p>
-            <input class="btn btn-danger btn-outline-danger" type="submit" value="Rezerwuj">
-        </p>
+    <div class=" log-in text-center ">
+        <h2 class="main-logo mb-3">Wybierz Ilość osób</h2>
+        <form class="register" action="{% url 'reservation' %}" method="POST">
+        {% csrf_token %}
+            <span>{{form.as_p}}</span>
+            <p class="nav-item"> <input class="btn btn-danger" type="submit" value="Rezerwuj"></p>
+            <input type="hidden" value="{{day}}" name="day" />
+        </form>
     </div>
-
 
  {% endblock %}

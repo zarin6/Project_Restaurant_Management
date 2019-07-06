@@ -17,7 +17,6 @@
 </head>
 
 <body>
-{#<header class="page-header">#}
 <header>
     <nav class="navbar">
         <a id="menu_button" class="navbar-brand">
@@ -65,14 +64,14 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/calendar">
-                    <span>Rezerwacja</span>
+                <a class="nav-link" href="/about">
+                    <span>Kontakt</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="">
-                    <span>Kontakt</span>
+                <a class="nav-link" href="/acception">
+                    <span>Rez. Do Akceptacji.</span>
                 </a>
             </li>
 
@@ -83,6 +82,15 @@
                         <span>Zarejestruj się</span>
                     </a>
                 </li>
+            {% endif %}
+
+            {% if user.is_authenticated %}
+
+                 <li class="nav-item">
+                     <a class="nav-link" href="/calendar">
+                         <span>Rezerwacja</span>
+                     </a>
+                 </li>
 
             {% endif %}
 

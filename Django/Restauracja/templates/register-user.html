@@ -3,17 +3,14 @@
 
     <div class="logowanie">
 
-        <div class="text-center">
+        <div class="log-in text-center">
         <h2>Zarejestruj się:</h2>
-
-        <form class="register" action="{% url 'register-user' %}" method="POST">
+            <form class="register" action="{% url 'register-user' %}" method="POST">
             {% csrf_token %}
                 <span>{{form.as_table}}</span>
-            <p class="nav-item"><input type="submit" class="btn btn-danger" value="Zarejestruj się"> </p>
-
-        </form>
-            </div>
-
+                <p class="nav-item"><input type="submit" class="btn btn-danger" value="Zarejestruj się"> </p>
+            </form>
+        </div>
 
     </div>
 

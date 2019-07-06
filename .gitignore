@@ -1,0 +1,8 @@
+*.pyc
+*.pyo
+env/
+tags
+.idea
+*.iml
+__pycache__/*
+__init__.py
